@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-    let [ search, setSearch ] = useState('carpenters');
+    let [ search, setSearch ] = useState('');
     let [ message, setMessage ] = useState('Search for Music');
     let [ data, setData ] = useState( [] )
 
@@ -24,8 +24,10 @@ function App() {
           setMessage( ` We could find nothing for "${ search }"`)
         }
       }
+      if ( search ) {
+        fetchData();
 
-      fetchData();
+      }
 
     }, [ search ]);
 
