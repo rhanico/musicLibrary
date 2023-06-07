@@ -27,7 +27,7 @@ export default function GalleryItem ( { item } ) {
         backgroundImage : `url(${artworkUrl100})`,
         backgroundRepeat: "no-repeat",
         backgroundSize : "cover",
-        color : "red"
+        color : "pink"
     }
 
     const simpleView = () => {
