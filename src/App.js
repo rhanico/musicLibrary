@@ -61,9 +61,8 @@ function App() {
             }
           />
 
-          <Route path="/album/:id" element={ <AlbumView/> } />
-          <Route path="/artist/:id" element={ <ArtistView/> } />
-
+          <Route path="/album/:id" element={<AlbumView />} />
+          <Route path="/artist/:id" element={<ArtistView />} />
         </Routes>
       </Router>
     </div>
